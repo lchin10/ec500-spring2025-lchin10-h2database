@@ -1252,6 +1252,10 @@ public class TableFilter implements ColumnResolver {
         return indexHints;
     }
 
+    public Expression getFullCondition(){
+        return fullCondition;
+    }
+
     /**
      * Returns whether this is a table filter with implicit DUAL table for a
      * SELECT without a FROM clause.
